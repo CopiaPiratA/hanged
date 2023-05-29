@@ -1,0 +1,89 @@
+body {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(8, 72, 67);
+   
+}
+main {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+h1{
+    color:rgb(255, 255, 255) ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-decoration: underline;
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: aliceblue;
+    margin: auto;
+}
+img {
+    width: 90%;
+    height: 150px;
+}
+button {
+    margin: 5px;
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 5px 5px;
+    color: white;
+    background-color: rgb(46, 112, 106);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    transition: .5s;
+}
+
+.clicked {
+    color: rgb(40, 67, 67);
+    background-color: rgb(15, 45, 71);
+}
+#buttons {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#retry-btn{
+    margin: auto;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 35%
+}
+#retry-section{
+    display: none;
+    position: absolute;
+    left: 20px;
+    background-color: rgb(23, 121, 95);
+    width: 90%;
+    height: 500px;
+    border-radius: 10px 10px;
+    text-align: center;
+}
+#victory-img {
+    margin: auto;
+    margin-top: 50px;
+    animation: transform 2s linear infinite;
+}
+@keyframes transform {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+.mostrar{
+    color: red;
+}
