@@ -87,3 +87,23 @@ button {
 .mostrar{
     color: red;
 }
+@media screen and (min-width: 900px) {
+   img {
+    width: 30%;
+    height: 300px;
+   }
+   #buttons {
+    width: 60%;
+   }
+   #victory-img {
+    width:300px;
+   }
+   #retry-section {
+        height: 520px;
+        margin: auto;
+   }
+   #retry-btn {
+     top: 65%;
+     left:38%;
+   }
+  }
