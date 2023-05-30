@@ -48,29 +48,27 @@ function hint() {
     hintBtn.className = "hint";
     document.body.appendChild(hintBtn);
 
-        hintBtn.addEventListener("click",()=>{
-            for (i = 0 ;  i < randomWord.length ; i++){ 
-                hintBtn.addEventListener("click", () => {
-                    for (let i = 0; i < 7; i++) {
-                      if (notClickedBtns.includes(randomWord[i])) {
-                            notClickedBtns.splice(notClickedBtns.indexOf(randomWord[i]), 1);
-                            let remainingBtns = notClickedBtns.filter(btn => !randomWord.includes(btn));
-                            luckyBtns.push(remainingBtns[Math.floor(Math.random() * remainingBtns.length)]);
+       
+            hintBtn.addEventListener("click", () => {
+                hintBtn.style.display = "none";
+                for (let i = 0; i < 7; i++) {
+                    if (notClickedBtns.includes(randomWord[i])) {
+                        notClickedBtns.splice(notClickedBtns.indexOf(randomWord[i]), 1);
+                        let remainingBtns = notClickedBtns.filter(btn => !randomWord.includes(btn));
+                        luckyBtns.push(remainingBtns[Math.floor(Math.random() * remainingBtns.length)]);
+                        hintBtn.style.display = "none";
 
-                                for (let i = 0; i < buttons.length; i++) {
-                                    let buttonText = buttons[i].textContent;
-                                    if (luckyBtns.includes(buttonText)) {
-                                    buttons[i].className = "clicked";
-                                    buttons[i].disabled = true;
-                                    hintBtn.style.display = "none";
-                                }
+                            for (let i = 0; i < buttons.length; i++) {
+                                let buttonText = buttons[i].textContent;
+                                if (luckyBtns.includes(buttonText)) {
+                                buttons[i].className = "clicked";
+                                buttons[i].disabled = true;
+                                hintBtn.style.display = "none";
                             }
                         }
                     }
-                });
-            }
-            
-        })
+                }
+            }); 
 }
 
 function contains(letter) {
