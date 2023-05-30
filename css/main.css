@@ -101,6 +101,7 @@ button {
    #retry-section {
         height: 520px;
         margin: auto;
+        margin-left: 3.5%;
    }
    #retry-btn {
      top: 65%;
