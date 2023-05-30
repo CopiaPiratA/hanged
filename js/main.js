@@ -30,7 +30,6 @@ function setRandomWord() {
     hiddenArray = hiddenWord.split("")
     hiddenArray = hiddenWord.split("")
     showWord.innerHTML = hiddenArray.join(" ");
-    console.log(randomWord)
 }
 
 function defeat(){
@@ -57,7 +56,6 @@ function hint() {
                             notClickedBtns.splice(notClickedBtns.indexOf(randomWord[i]), 1);
                             let remainingBtns = notClickedBtns.filter(btn => !randomWord.includes(btn));
                             luckyBtns.push(remainingBtns[Math.floor(Math.random() * remainingBtns.length)]);
-                            console.log(luckyBtns);
 
                                 for (let i = 0; i < buttons.length; i++) {
                                     let buttonText = buttons[i].textContent;
